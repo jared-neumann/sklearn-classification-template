@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "sklearn-classification-template"
+version = "0.1.0"
+description = "A template for quickly spinning up scikit-learn classification model."
+authors = ["jared-neumann <janeuman@iu.edu>"]
+readme = "README.md"
+packages = [{include = "sklearn_classification_template"}]
+
+[tool.poetry.dependencies]
+python = "3.8.10"
+pandas = ">=1.0.0,<2.0.0"
+spacy = ">=3.3.0,<3.4.0"
+allennlp-models = "^2.0.0"
+scikit-learn = "^1.2.0"
+toml = "^0.10.0"
+tqdm = "^4.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.0"
+pytest-cov = "^2.0.0"
+black = "^20.0.0"
+flake8 = "^3.0.0"
+flake8-black = "^0.2.1"
+flake8-bugbear = "^20.0.0"
+flake8-comprehensions = "^3.0.0"
+flake8-docstrings = "^1.0.0"
+flake8-import-order = "^0.18.0"
+flake8-quotes = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
